@@ -1,0 +1,22 @@
+{
+    "name": "USockets.VContainer.PipeMediator",
+    "rootNamespace": "USockets.VContainer.PipeMediator",
+    "references": [
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:08b38f39e2d9e594389b7a4cf4c2c338",
+        "GUID:77e1c058a107d4e6a8701ef0f44d0784",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:01b156e025d2c4e5c8f6d92ff7a4373f",
+        "GUID:068c023cc66e448f2b686dd44dd48582",
+        "GUID:a068b6c9f233c4ab2b839440362e369c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

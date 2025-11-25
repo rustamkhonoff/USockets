@@ -1,0 +1,12 @@
+{
+  "name": "com.rustamkhonoff.usockets.vcontainer",
+  "version": "1.0.0",
+  "displayName": "USockets.VContainer",
+  "description": "USockets extensions for VContainer",
+  "unity": "2021.3",
+  "unityRelease": "21f1",
+  "author": {
+    "name": "rustamkhonoff",
+    "email": "rustamkhonoff@gmail.com"
+  }
+}

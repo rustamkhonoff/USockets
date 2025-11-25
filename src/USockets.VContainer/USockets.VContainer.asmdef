@@ -1,0 +1,27 @@
+{
+    "name": "USockets.VContainer",
+    "rootNamespace": "USockets.VContainer",
+    "references": [
+        "GUID:01b156e025d2c4e5c8f6d92ff7a4373f",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:04376767bc1f3b428aefa3d20743e819"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "VCONTAINER"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.messagepipe.vcontainer",
+            "expression": "0.0.0",
+            "define": "VCONTAINER"
+        }
+    ],
+    "noEngineReferences": false
+}

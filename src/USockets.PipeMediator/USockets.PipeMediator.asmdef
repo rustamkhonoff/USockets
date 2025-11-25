@@ -1,0 +1,19 @@
+{
+    "name": "USockets.PipeMediator",
+    "rootNamespace": "USockets.PipeMediator",
+    "references": [
+        "GUID:01b156e025d2c4e5c8f6d92ff7a4373f",
+        "GUID:08b38f39e2d9e594389b7a4cf4c2c338",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:a068b6c9f233c4ab2b839440362e369c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

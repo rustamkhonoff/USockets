@@ -1,0 +1,12 @@
+{
+  "name": "com.rustamkhonoff.usockets",
+  "version": "1.0.0",
+  "displayName": "USockets",
+  "description": "Pub/Sub wrapper over NativeWebSockets",
+  "unity": "2021.3",
+  "unityRelease": "21f1",
+  "author": {
+    "name": "rustamkhonoff",
+    "email": "rustamkhonoff@gmail.com"
+  }
+}
