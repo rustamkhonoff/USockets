@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using NativeWebSocket;
 
-namespace USockets
+namespace USocket
 {
     public class WireConfiguration
     {

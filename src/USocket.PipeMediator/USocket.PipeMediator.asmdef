@@ -1,6 +1,6 @@
 {
-    "name": "USockets.PipeMediator",
-    "rootNamespace": "USockets.PipeMediator",
+    "name": "USocket.PipeMediator",
+    "rootNamespace": "USocket.PipeMediator",
     "references": [
         "GUID:01b156e025d2c4e5c8f6d92ff7a4373f",
         "GUID:08b38f39e2d9e594389b7a4cf4c2c338",

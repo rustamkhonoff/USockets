@@ -1,13 +1,15 @@
 // -------------------------------------------------------------------
 // Author: Shokhrukhkhon Rustamkhonov
-// Date: 24.11.2025
+// Date: 25.11.2025
 // Description:
 // -------------------------------------------------------------------
 
-namespace USockets
+using Cysharp.Threading.Tasks;
+
+namespace USocket
 {
-    public interface ILogger
+    public interface IWebSocketPublisher<in T>
     {
-        void Log(WebSocketLogLevel logLevel, string message);
+        UniTask Send(T data);
     }
 }

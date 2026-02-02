@@ -7,9 +7,9 @@
 using System;
 using NativeWebSocket;
 using UnityEngine;
+using USocket;
 using VContainer;
-using VContainer.Unity;
-using IInitializable = VContainer.Unity.IInitializable;
+using ILogger = USocket.ILogger;
 
 namespace USockets.VContainer
 {

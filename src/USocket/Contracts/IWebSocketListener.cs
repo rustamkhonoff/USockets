@@ -1,7 +1,7 @@
 using System;
 using NativeWebSocket;
 
-namespace USockets
+namespace USocket
 {
     public interface IWebSocketListener<out T>
     {

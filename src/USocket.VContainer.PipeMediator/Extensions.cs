@@ -7,7 +7,7 @@
 using System;
 using MessagePipe;
 using PipeMediator;
-using USockets.PipeMediator;
+using USocket.PipeMediator;
 using VContainer;
 
 namespace USockets.VContainer.PipeMediator

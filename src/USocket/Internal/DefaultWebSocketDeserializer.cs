@@ -1,7 +1,7 @@
 using System.Text;
 using Newtonsoft.Json;
 
-namespace USockets
+namespace USocket
 {
     internal class DefaultWebSocketMessageConvert : IWebSocketMessageConvert
     {

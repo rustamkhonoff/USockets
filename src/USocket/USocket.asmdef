@@ -1,6 +1,6 @@
 {
-    "name": "USockets",
-    "rootNamespace": "USockets",
+    "name": "USocket",
+    "rootNamespace": "USocket",
     "references": [
         "GUID:04376767bc1f3b428aefa3d20743e819",
         "GUID:f51ebe6a0ceec4240a699833d6309b23"

@@ -1,7 +1,7 @@
 {
   "name": "com.rustamkhonoff.usockets",
   "version": "1.0.0",
-  "displayName": "USockets",
+  "displayName": "USocket",
   "description": "Pub/Sub wrapper over NativeWebSockets",
   "unity": "2021.3",
   "unityRelease": "21f1",

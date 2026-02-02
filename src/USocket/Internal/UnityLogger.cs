@@ -6,9 +6,8 @@
 
 using System;
 using UnityEngine;
-using ILogger = USockets.ILogger;
 
-namespace USockets
+namespace USocket
 {
     internal class UnityLogger : ILogger
     {

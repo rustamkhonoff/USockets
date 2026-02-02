@@ -9,7 +9,7 @@ using Cysharp.Threading.Tasks;
 using MessagePipe;
 using PipeMediator;
 
-namespace USockets.PipeMediator
+namespace USocket.PipeMediator
 {
     public class WebSocketPublisherPipeMediatorWrapper<TMessage> : IAsyncMessageHandler<TMessage>
         where TMessage : INotification

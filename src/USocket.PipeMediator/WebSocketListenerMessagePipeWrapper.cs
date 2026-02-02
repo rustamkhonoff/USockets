@@ -7,7 +7,7 @@
 using System;
 using PipeMediator;
 
-namespace USockets.PipeMediator
+namespace USocket.PipeMediator
 {
     public class WebSocketListenerMessagePipeWrapper<TMessage> : IDisposable
         where TMessage : INotification

@@ -2,7 +2,7 @@ using System;
 using NativeWebSocket;
 using Newtonsoft.Json;
 
-namespace USockets
+namespace USocket
 {
     internal class WebSocketMessageListener<T> : IWebSocketListener<T>, IDisposable
     {

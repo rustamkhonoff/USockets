@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using NativeWebSocket;
 
-namespace USockets
+namespace USocket
 {
     internal class WebSocketMessagePublisher<T> : IWebSocketPublisher<T>, IDisposable
     {

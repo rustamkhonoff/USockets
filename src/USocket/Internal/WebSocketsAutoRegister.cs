@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using NativeWebSocket;
 
-namespace USockets
+namespace USocket
 {
     internal class WebSocketsAutoRegister
     {

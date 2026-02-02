@@ -1,4 +1,4 @@
-namespace USockets
+namespace USocket
 {
     public interface IWebSocketMessageConvert
     {

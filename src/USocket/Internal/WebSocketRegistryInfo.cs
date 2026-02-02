@@ -2,7 +2,7 @@ using System;
 using NativeWebSocket;
 using UnityEngine;
 
-namespace USockets
+namespace USocket
 {
     internal interface IWebSocketRegistryInfo
     {
