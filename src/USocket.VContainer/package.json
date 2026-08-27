@@ -1,8 +1,8 @@
 {
-  "name": "com.rustamkhonoff.usockets.vcontainer",
-  "version": "1.0.0",
-  "displayName": "USockets.VContainer",
-  "description": "USockets extensions for VContainer",
+  "name": "com.rustamkhonoff.usocket.vcontainer",
+  "version": "2.0.0",
+  "displayName": "USocket.VContainer",
+  "description": "USocket extensions for VContainer",
   "unity": "2021.3",
   "unityRelease": "21f1",
   "author": {

@@ -1,15 +1,9 @@
-// -------------------------------------------------------------------
-// Author: Shokhrukhkhon Rustamkhonov
-// Date: 24.11.2025
-// Description:
-// -------------------------------------------------------------------
-
 using System;
 using UnityEngine;
 
 namespace USocket
 {
-    internal class UnityLogger : ILogger
+    internal sealed class UnityLogger : ILogger
     {
         private readonly WireConfiguration m_configuration;
 
@@ -20,28 +14,32 @@ namespace USocket
 
         public void Log(WebSocketLogLevel logLevel, string message)
         {
-            if (logLevel <= m_configuration.Logging.LogLevel)
-                Unity_Log(logLevel, message);
+            if (logLevel > m_configuration.Logging.LogLevel)
+                return;
+
+            Write(logLevel, message);
         }
 
-        private void Unity_Log(WebSocketLogLevel level, string text)
+        private void Write(WebSocketLogLevel level, string message)
         {
             switch (level)
             {
                 case WebSocketLogLevel.None:
                     break;
+
                 case WebSocketLogLevel.Error:
-                    Debug.LogError(text);
+                    Debug.LogError(message);
                     break;
+
                 case WebSocketLogLevel.Warning:
-                    Debug.LogWarning(text);
+                    Debug.LogWarning(message);
                     break;
+
                 case WebSocketLogLevel.Info:
-                    Debug.Log(text);
-                    break;
                 case WebSocketLogLevel.Verbose:
-                    Debug.Log(text);
+                    Debug.Log(message);
                     break;
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(level), level, null);
             }

@@ -8,7 +8,7 @@ using System;
 using VContainer;
 using VContainer.Unity;
 
-namespace USockets.VContainer
+namespace USocket.VContainer
 {
     internal static class WrappersExtensions
     {
