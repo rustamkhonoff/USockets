@@ -1,5 +1,5 @@
 {
-  "name": "com.rustamkhonoff.usockets",
+  "name": "com.rustamkhonoff.usocket",
   "version": "2.0.0",
   "displayName": "USocket",
   "description": "Pub/Sub wrapper over NativeWebSockets",
