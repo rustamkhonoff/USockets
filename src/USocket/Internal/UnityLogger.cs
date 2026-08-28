@@ -17,12 +17,7 @@ namespace USocket
             if (logLevel > m_configuration.Logging.LogLevel)
                 return;
 
-            Write(logLevel, message);
-        }
-
-        private void Write(WebSocketLogLevel level, string message)
-        {
-            switch (level)
+            switch (logLevel)
             {
                 case WebSocketLogLevel.None:
                     break;
@@ -41,7 +36,7 @@ namespace USocket
                     break;
 
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(level), level, null);
+                    throw new ArgumentOutOfRangeException(nameof(logLevel));
             }
         }
     }

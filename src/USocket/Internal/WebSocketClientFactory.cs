@@ -1,6 +1,6 @@
 namespace USocket
 {
-    internal sealed class WebSocketClientFactory : IWebSocketClientFactory
+    public sealed class WebSocketClientFactory : IWebSocketClientFactory
     {
         private readonly IWebSocketMessageConverter m_converter;
         private readonly ILogger m_logger;

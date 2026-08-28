@@ -8,6 +8,6 @@ namespace USocket
 
         public IReadOnlyDictionary<string, string> Headers { get; init; }
 
-        public string SubProtocol { get; init; }
+        public IReadOnlyList<string> SubProtocols { get; init; }
     }
 }
