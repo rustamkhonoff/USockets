@@ -20,6 +20,7 @@ namespace USocket
 
         private readonly IWebSocketMessageConverter m_converter;
         private readonly ILogger m_logger;
+        private readonly IWebSocketDispatcher m_dispatcher;
 
         private WebSocket m_socket;
 
@@ -28,11 +29,13 @@ namespace USocket
 
         public WebSocketClient(
             IWebSocketMessageConverter converter,
-            ILogger logger
+            ILogger logger,
+            IWebSocketDispatcher dispatcher
         )
         {
             m_converter = converter;
             m_logger = logger;
+            m_dispatcher = dispatcher;
         }
 
         public async UniTask Connect(
@@ -106,6 +109,8 @@ namespace USocket
                 completionSource.TrySetCanceled(ct);
             });
 
+            m_dispatcher.Add(socket);
+
             m_logger.Log(
                 WebSocketLogLevel.Info,
                 $"[WebSocket] Connecting: {options.Url}"
@@ -119,6 +124,8 @@ namespace USocket
             }
             catch
             {
+                m_dispatcher.Remove(socket);
+
                 if (ReferenceEquals(m_socket, socket))
                     m_socket = null;
 
@@ -168,6 +175,10 @@ namespace USocket
 
             WebSocket socket = m_socket;
             m_socket = null;
+
+            m_connectionVersion++;
+
+            m_dispatcher.Remove(socket);
 
             m_logger.Log(
                 WebSocketLogLevel.Info,
@@ -276,10 +287,16 @@ namespace USocket
 
             if (socket != null)
             {
+                m_dispatcher.Remove(socket);
+
                 if (socket.State == WebSocketState.Connecting)
+                {
                     socket.CancelConnection();
+                }
                 else if (socket.State == WebSocketState.Open)
+                {
                     _ = socket.Close();
+                }
             }
 
             OnMessage = null;

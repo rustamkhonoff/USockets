@@ -1,12 +1,13 @@
 using System;
 using USocket;
+using USocket.VContainer;
 using VContainer;
 
 namespace USockets.VContainer
 {
     public static class Extensions
     {
-        public static void AddUSocket(
+        public static void AddUSockets(
             this IContainerBuilder builder,
             Action<WireConfiguration> configure = null
         )
@@ -23,8 +24,15 @@ namespace USockets.VContainer
             builder.Register(configuration.LoggerType, Lifetime.Singleton)
                 .As<USocket.ILogger>();
 
+            builder.Register<WebSocketDispatcher>(Lifetime.Singleton)
+                .As<IWebSocketDispatcher>();
+
             builder.Register<WebSocketClientFactory>(Lifetime.Singleton)
                 .As<IWebSocketClientFactory>();
+
+            builder.AddTickableFor<WebSocketDispatcher>(
+                dispatcher => dispatcher.Dispatch()
+            );
         }
     }
 }
