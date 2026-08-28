@@ -28,7 +28,7 @@ namespace USocket.VContainer
             builder.Register<WebSocketClientFactory>(Lifetime.Singleton)
                 .As<IWebSocketClientFactory>();
 
-            builder.AddTickableFor<WebSocketDispatcher>(
+            builder.AddTickableFor<IWebSocketDispatcher>(
                 dispatcher => dispatcher.Dispatch()
             );
         }
