@@ -1,13 +1,11 @@
 using System;
-using USocket;
-using USocket.VContainer;
 using VContainer;
 
-namespace USockets.VContainer
+namespace USocket.VContainer
 {
     public static class Extensions
     {
-        public static void AddUSockets(
+        public static void AddUSocket(
             this IContainerBuilder builder,
             Action<WireConfiguration> configure = null
         )
